@@ -12,6 +12,7 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -38,11 +39,10 @@ Vet Clinic Database is a relational database to store animals' information, inse
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
-
 - **Database named vet-clinic**
 - **Table named animal**
+- **Run relevant queries to fetch data from the database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,14 +82,41 @@ Clone this repository to your desired folder:
   git clone git@github.com/yusufyusie/vet-clinic
   cd vet-clinic
 ```
+### Usage
 
+To run the project, start the Postgresql server first, connect with vet_clininc database and execute the following commands on terminal:
+
+```sh
+  $ brew services restart postgresql@14
+  $ psql postgres
+
+  postgres=# CREATE DATABASE vet_clininc;
+  CREATE DATABASE
+
+  postgres=# \c vet_clininc;
+  CREATE DATABASE
+
+```
+
+Exit sql by running 
+
+```sh
+
+postgres=# \q
+
+```
+Reconnect with database by
+
+```sh
+
+$ psql vet_clinic
+
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Yesuf Fenta**
 
@@ -102,8 +129,6 @@ Clone this repository to your desired folder:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Add Column To Table**
 - [ ] **Create Bridge Table**
@@ -132,9 +157,7 @@ If you like this project please don't forget to give me a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank microverse for providing me the template for this project
+I would like to thank microverse for providing me with the template for this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +168,7 @@ I would like to thank microverse for providing me the template for this project
 
 - **[Why I use this repository app?]**
 
-  - [To create database for vet_clinic]
+  - [To create the database for vet_clinic]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,6 +177,4 @@ I would like to thank microverse for providing me the template for this project
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://github.com/yusufyusie/Vet-clinic/blob/clinic/LICENSE) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
