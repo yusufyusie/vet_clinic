@@ -33,18 +33,26 @@ SELECT * from animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 -----------------------------------------------
 -----------------------------------------------
+-- Inside a transaction update the animals table by setting the species column to unspecified. 
 BEGIN;
 
 UPDATE animals
 SET species = 'unspecified';
 
+ SELECT species from animals
+
 ROLLBACK;
+SELECT species from animals;
 
 BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
-UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL; 
+
+SELECT species from animals;
 COMMIT;
 
+ SELECT species from animals;
+ 
 SELECT * FROM animals
 
 BEGIN;
