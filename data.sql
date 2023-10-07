@@ -82,3 +82,29 @@ VALUES
     (1,'William Tatcher', 2),
     (3,'Stephanie Mendez', 2),
     (4,'Jack Harkness', 1);
+
+    INSERT INTO visits (vet_id, vet_name, animal_id, animal, date_of_visit)
+VALUES
+	(1, 'William Tatcher', 1, 'Agumon', '2020,05,24'),
+	(3, 'Stephanie Mendez', 1, 'Agumon', '2020,07,22'),
+	(4, 'Jack Harkness', 2, 'Gabumon', '2021,02,02'),
+	(2, 'Maisy Smith', 3, 'Pikachu', '2020,01,05'),
+	(2, 'Maisy Smith', 3, 'Pikachu', '2020,03,08'),
+	(2, 'Maisy Smith', 3, 'Pikachu', '2020,05,14'),
+	(3, 'Stephanie Mendez', 4, 'Devimon', '2021,05,04'),
+	(4, 'Jack Harkness', 5, 'Charmander', '2021,02,24'),
+	(2, 'Maisy Smith', 6, 'Plantmon', '2019,12,21'),
+	(2, 'Maisy Smith', 6, 'Plantmon', '2020,08,10'),
+	(1, 'William Tatcher', 6, 'Plantmon', '2021,04,07'),
+	(3, 'Stephanie Mendez', 7, 'Squirtle', '2019,09,29'),
+	(4, 'Jack Harkness', 8, 'Angemon', '2020,10,03'),
+	(4, 'Jack Harkness', 8, 'Angemon', '2020,11,04'),
+	(2, 'Maisy Smith', 9, 'Boarmon', '2019,01,24'),
+	(2, 'Maisy Smith', 9, 'Boarmon', '2019,05,15'),
+	(2, 'Maisy Smith', 9, 'Boarmon', '2020,02,27'),
+	(2, 'Maisy Smith', 9, 'Boarmon', '2020,08,03'),
+	(3, 'Stephanie Mendez', 10, 'Blossom', '2020,05,24'),
+	(1, 'William Tatcher', 10, 'Blossom', '2021,01,11');
+
+----------------------------------------------
+----------------------------------------------
