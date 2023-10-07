@@ -38,11 +38,10 @@ Vet Clinic Database is a relational database to store animals' information, inse
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
-
 - **Database named vet-clinic**
 - **Table named animal**
+- **Run relevant queries to fetch data from the database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +81,36 @@ Clone this repository to your desired folder:
   git clone git@github.com/yusufyusie/vet-clinic
   cd vet-clinic
 ```
+### Usage
 
+To run the project, start the Postgresql server first, connect with vet_clininc database and execute the following commands on terminal:
+
+```sh
+  $ brew services restart postgresql@14
+  $ psql postgres
+
+  postgres=# CREATE DATABASE vet_clininc;
+  CREATE DATABASE
+
+  postgres=# \c vet_clininc;
+  CREATE DATABASE
+
+```
+
+Exit sql by running 
+
+```sh
+
+postgres=# \q
+
+```
+Reconnect with database by
+
+```sh
+
+$ psql vet_clinic
+
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
