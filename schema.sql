@@ -49,3 +49,37 @@ ADD COLUMN owner_id INTEGER REFERENCES owners(id);
 
 -------------------------------------------------
 -------------------------------------------------
+
+CREATE TABLE vets (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    age INT,
+    date_of_graduation DATE,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE specializations (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    vet_id INT,
+    vet_name VARCHAR(100),
+    species_id INT,
+    PRIMARY KEY(id),
+    CONSTRAINT fk_vet
+    FOREIGN KEY (vet_id)
+    REFERENCES vets (id)
+    ON DELETE CASCADE,
+    CONSTRAINT fk_species
+    FOREIGN KEY (species_id)
+    REFERENCES species (id)
+    ON DELETE CASCADE
+);
+
+CREATE TABLE visits (
+    vet_id INTEGER REFERENCES vets(id),
+    animal_id INTEGER REFERENCES animals(id),
+    visit_date DATE,
+    PRIMARY KEY (vet_id, animal_id, visit_date)
+);
+
+----------------------------------
+----------------------------------

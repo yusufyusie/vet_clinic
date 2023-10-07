@@ -12,6 +12,7 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -101,6 +102,7 @@ Exit sql by running
 
 ```sh
 
+
 postgres=# \q
 
 ```
@@ -110,6 +112,16 @@ Reconnect with database by
 
 $ psql vet_clinic
 
+=======
+
+postgres=# \q
+
+```
+Reconnect with database by
+
+```sh
+
+$ psql vet_clinic
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,4 +188,5 @@ I would like to thank microverse for providing me with the template for this pro
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
