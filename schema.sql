@@ -49,3 +49,11 @@ ADD COLUMN owner_id INTEGER REFERENCES owners(id);
 
 -------------------------------------------------
 -------------------------------------------------
+
+CREATE TABLE vets (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    age INT,
+    date_of_graduation DATE,
+    PRIMARY KEY(id)
+);
