@@ -9,14 +9,9 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -43,21 +38,10 @@ Vet Clinic Database is a relational database to store animals' information, inse
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
-
 - **Database named vet-clinic**
 - **Table named animal**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
+- **Run relevant queries to fetch data from the database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,13 +49,19 @@ Vet Clinic Database is a relational database to store animals' information, inse
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+This repository includes files with plain SQL that can be used to recreate a database:
 
-To get a local copy up and running, follow these steps.
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
+
+ **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 ### Prerequisites
 
-In order to run this project you need postgres:
+- Postgresql@16:
+
+To install run:
 
  On Linux:
  
@@ -91,72 +81,41 @@ Clone this repository to your desired folder:
   git clone git@github.com/yusufyusie/vet-clinic
   cd vet-clinic
 ```
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
+To run the project, start the Postgresql server first, connect with vet_clininc database and execute the following commands on terminal:
 
 ```sh
-  rails server
+  $ brew services restart postgresql@14
+  $ psql postgres
+
+  postgres=# CREATE DATABASE vet_clininc;
+  CREATE DATABASE
+
+  postgres=# \c vet_clininc;
+  CREATE DATABASE
+
 ```
---->
 
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
+Exit sql by running 
 
 ```sh
 
-```
- -->
+postgres=# \q
 
+```
+Reconnect with database by
+
+```sh
+
+$ psql vet_clinic
+
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Yesuf Fenta**
 
@@ -170,11 +129,10 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **Add Column To Table**
 - [ ] **Create Bridge Table**
-
+- [ ] **Add Join queries**
+- [ ] **Add multiple tables**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -190,10 +148,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project please don't forget to give me a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,9 +156,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank microverse for providing me the template for this project
+I would like to thank microverse for providing me with the template for this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,15 +164,10 @@ I would like to thank microverse for providing me the template for this project
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Why I use this repository app?]**
 
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+  - [To create the database for vet_clinic]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,6 +176,4 @@ I would like to thank microverse for providing me the template for this project
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://github.com/yusufyusie/Vet-clinic/blob/clinic/LICENSE) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
