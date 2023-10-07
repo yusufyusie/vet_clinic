@@ -9,14 +9,9 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -51,27 +46,23 @@ Vet Clinic Database is a relational database to store animals' information, inse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+This repository includes files with plain SQL that can be used to recreate a database:
 
-To get a local copy up and running, follow these steps.
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
+
+ **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 ### Prerequisites
 
-In order to run this project you need postgres:
+- Postgresql@16:
+
+To install run:
 
  On Linux:
  
@@ -91,64 +82,6 @@ Clone this repository to your desired folder:
   git clone git@github.com/yusufyusie/vet-clinic
   cd vet-clinic
 ```
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,7 +107,8 @@ Example:
 
 - [ ] **Add Column To Table**
 - [ ] **Create Bridge Table**
-
+- [ ] **Add Join queries**
+- [ ] **Add multiple tables**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -190,10 +124,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project please don't forget to give me a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,15 +142,10 @@ I would like to thank microverse for providing me the template for this project
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Why I use this repository app?]**
 
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+  - [To create database for vet_clinic]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
