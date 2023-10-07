@@ -14,10 +14,18 @@ CREATE TABLE animals (
 -- Add utoincreament of id
 ALTER TABLE animals
 ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY;
+-- Add decimal places to two
+ALTER TABLE animals
+ALTER COLUMN weight_kg TYPE DECIMAL(10,2);
 
 -- Add a column species of type string to your animals table. Modify your schema.sql file.?
 
 ALTER TABLE animals ADD COLUMN species VARCHAR(255);
 
-ALTER TABLE animals
-ALTER COLUMN weight_kg TYPE DECIMAL(10,2);
+
+
+CREATE TABLE owners (
+  id BIGSERIAL PRIMARY KEY,
+  full_name VARCHAR(255),
+  age INTEGER
+);
