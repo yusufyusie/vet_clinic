@@ -89,8 +89,6 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Yesuf Fenta**
 
 - GitHub: [@yusufyusie](https://github.com/yusufyusie)
@@ -102,8 +100,6 @@ Clone this repository to your desired folder:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Add Column To Table**
 - [ ] **Create Bridge Table**
@@ -132,9 +128,7 @@ If you like this project please don't forget to give me a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank microverse for providing me the template for this project
+I would like to thank microverse for providing me with the template for this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +139,7 @@ I would like to thank microverse for providing me the template for this project
 
 - **[Why I use this repository app?]**
 
-  - [To create database for vet_clinic]
+  - [To create the database for vet_clinic]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,6 +148,4 @@ I would like to thank microverse for providing me the template for this project
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://github.com/yusufyusie/Vet-clinic/blob/clinic/LICENSE) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
