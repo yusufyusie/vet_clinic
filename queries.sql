@@ -190,3 +190,11 @@ SELECT V.vet_name, V.date_of_visit, A.name, A.species_id, S.species_id from visi
 -- What specialty should Maisy Smith consider getting? Look for the species she gets the most.
 
 SELECT V.vet_name, S.name as consider_specialalization_in, COUNT(S.name) as number_of_vsits from visits V join animals A on V.animal_id = A.id Left join species S on A.species_id = S.id WHERE V.vet_name = 'Maisy Smith' GROUP BY S.name, V.vet_name ORDER BY COUNT(S.name) DESC LIMIT 1;
+
+--------------------------------------------
+--------------------------------------------
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
